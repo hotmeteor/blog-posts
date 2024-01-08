@@ -222,16 +222,16 @@ $dotenv->load();
  */
 
 /** The name of the database for WordPress */
-define( 'DB_NAME', $_ENV['DB_DATABASE'] );
+define( 'DB_NAME', $_SERVER['DB_DATABASE'] );
 
 /** Database username */
-define( 'DB_USER', $_ENV['DB_USERNAME'] );
+define( 'DB_USER', $_SERVER['DB_USERNAME'] );
 
 /** Database password */
-define( 'DB_PASSWORD', $_ENV['DB_PASSWORD'] );
+define( 'DB_PASSWORD', $_SERVER['DB_PASSWORD'] );
 
 /** Database hostname */
-define( 'DB_HOST', $_ENV['DB_HOST'] );
+define( 'DB_HOST', $_SERVER['DB_HOST'] );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
